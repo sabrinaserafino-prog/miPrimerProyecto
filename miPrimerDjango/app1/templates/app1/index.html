@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/Recursos/css/Estilos/style.css">
+</head>
+  <body id="inicio"></body>
+    <nav class="navbar navbar-expand-lg miNavbar">
+  <div class="container">
+      <!-- LOGO -->
+    <a class="navbar-brand">
+      <img src="static/Recursos/Imagenes/logo.sinfondo.png" alt="EduEspecial" width="70"><span>EduEspecial</span>
+    </a>
+            <!-- BOTÓN PARA CELULAR -->
+ <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- MENÚ -->
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                   <a class="nav-link active" href="#inicio">Inicio</a>
+                
+                <!-- NIVEL -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown">
+                        Nivel
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="inicial.html">Inicial</a>
+                        </li>
+                            <a class="dropdown-item" href="primario.html">Primario</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="secundario.html">Secundario</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#galeria">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+                <button onclick="cambiarModo()" class="boton-modo">
+                🌙  
+            </button>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- CARRUSEL PRINCIPAL -->
+<div id="carruselPrincipal" class="carousel slide" data-bs-interval="3000">
+
+    <!-- INDICADORES -->
+    <div class="carousel-indicators">
+        <button type="button"
+                data-bs-target="#carruselPrincipal"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true">
+        </button>
+        <button type="button"
+                data-bs-target="#carruselPrincipal"
+                data-bs-slide-to="1">
+        </button>
+        <button type="button"
+                data-bs-target="#carruselPrincipal"
+                data-bs-slide-to="2">
+        </button>
+    </div>
+
+    <!-- IMÁGENES -->
+    <div class="carousel-inner">
+        <!-- IMAGEN 1 -->
+        <div class="carousel-item active">
+            <img src="static/Recursos/Imagenes/inclusión.png"
+                 class="d-block w-100"
+                 alt="Inclusión">
+            <div class="carousel-caption">
+                <h2>LA DIVERSIDAD</h2>
+                <p> enriquece nuestras vidas,
+                <h3>LA INCLUSiÓN</h3>
+                </p> fortalece nuestra comunidad.
+            </div>
+        </div>
+        <!-- IMAGEN 2 -->
+        <div class="carousel-item">
+            <img src="static/Recursos/Imagenes/juegos.png"
+                 class="d-block w-100"
+                 alt="Juegos didácticos">
+            <div class="carousel-caption">
+                <h2>JUEGOS DIDÁCTICOS</h2>
+                <p>
+                    Aprender también es jugar.
+                </p>
+            </div>
+        </div>
+        <!-- IMAGEN 3 -->
+        <div class="carousel-item">
+            <img src="static/Recursos/Imagenes/recurso didáctico.png"
+                 class="d-block w-100"
+                 alt="Recursos didácticos">
+            <div class="carousel-caption">
+                <h2>RECURSOS DIDÁCTICOS</h2>
+                <p>
+                    Ideas y materiales para acompañar cada aprendizaje.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- BOTÓN ANTERIOR -->
+    <button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carruselPrincipal"
+            data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">
+            Anterior
+        </span>
+    </button>
+    <!-- BOTÓN SIGUIENTE -->
+    <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#carruselPrincipal"
+            data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">
+            Siguiente
+        </span>
+    </button>
+</div>
+</div>
+<!-- BIENVENIDA -->
+<section class="bienvenida">
+    <h1>EduEspecial</h1>
+    <p>
+      Es una página creada por docentes de Educación Especial con el propósito de generar un espacio de encuentro e intercambio. Aquí se comparten materiales, ideas, experiencias, aprendizajes y recursos didácticos para los diferentes niveles educativos, con el objetivo de acompañar y favorecer el aprendizaje de los estudiantes.
+    </p>
+
+<!-- ELEGIR NIVEL -->
+<section id="niveles" class="seccion-niveles">
+    <h2>Niveles</h2>
+    <p>
+        Encontrá sugerencias de recursos y actividades según el nivel educativo.
+    </p>
+    <div class="contenedor-niveles">
+        <!-- NIVEL INICIAL -->
+        <div class="tarjeta-nivel">
+            <div class="icono-nivel"></div>
+            <h3>Nivel Inicial</h3>
+            <p>
+                Juegos y actividades para acompañar
+                los primeros aprendizajes.
+            </p>
+           <a href="inicial.html" class="boton-nivel">
+             VER RECURSOS
+           </a>
+        </div>
+
+        <!-- NIVEL PRIMARIO -->
+        <div class="tarjeta-nivel">
+            <div class="icono-nivel"></div>
+            <h3>Nivel Primario</h3>
+            <p>
+                Actividades de lectura, escritura,
+                matemática y mucho más.
+            </p>
+            <!-- NIVEL PRIMARIO -->
+            <a href="primario.html" class="boton-nivel">
+            VER RECURSOS
+            </a>
+        </div>
+
+        <!-- NIVEL SECUNDARIO -->
+        <div class="tarjeta-nivel">
+            <div class="icono-nivel"></div>
+            <h3>Nivel Secundario</h3>
+            <p>
+                Recursos para favorecer la autonomía,
+                comunicación y aprendizajes funcionales.
+            </p>
+            <a href="secundario.html" class="boton-nivel">
+             VER RECURSOS
+            </a>
+        </div>
+    </div>
+
+   <!-- GALERÍA -->
+<section id="galeria" class="seccion-galeria">
+    <h2>Galería</h2>
+    <p>Imágenes de actividades y recursos educativos.</p>
+    <div class="galeria">
+        <img src="static/Recursos/Imagenes/inclusión2.png"
+             alt="Inclusión"
+             onclick="abrirImagen(this)">
+        <img src="static/Recursos/Imagenes/juego didáctico.png"
+             alt="Juego didáctico"
+             onclick="abrirImagen(this)">
+        <img src="static/Recursos/Imagenes/recurso didáctico.png"
+             alt="Recurso didáctico"
+             onclick="abrirImagen(this)">
+    </div>
+</section>
+
+
+<!-- IMAGEN AMPLIADA -->
+<div id="visorImagen" class="visor-imagen">
+    <span class="cerrar-imagen" onclick="cerrarImagen()">
+        &times;
+    </span>
+    <img id="imagenGrande"
+         src=""
+         alt="Imagen ampliada">
+
+</div>
+<!-- CONTACTO -->
+<section id="contacto" class="seccion-contacto">
+    <h2>Contacto</h2>
+    <p>¿Tenés alguna consulta o querés compartir un recurso?</p>
+    <form id="formContacto">
+        <input 
+            type="text" 
+            id="nombre"
+            placeholder="Nombre">
+
+        <input 
+            type="email" 
+            id="email"
+            placeholder="Correo electrónico">
+
+        <textarea 
+            id="mensaje"
+            rows="5"
+            placeholder="Escribí tu mensaje"></textarea>
+
+        <button type="submit">
+            ENVIAR
+        </button>
+        <p id="mensajeFormulario"></p>
+    </form>
+</section>
+
+<!-- PIE DE PÁGINA -->
+<footer class="final">
+    <h3>EduEspecial</h3>
+
+    <p>
+        Recursos educativos para aprender, jugar e incluir.
+        © 2026. 
+    </p>
+     
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="static/Recursos/Js/main.js"></script>
+
+<!-- BOTÓN VOLVER ARRIBA -->
+<button id="botonSubir" onclick="volverArriba()">
+    ↑
+</button>
+</a>
+</body>
+</html>

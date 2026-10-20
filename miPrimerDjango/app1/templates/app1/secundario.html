@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel Secundario - EduEspecial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Recursos/Estilos/style.css">
+</head>
+<body id="inicio">
+<main class="pagina-secundario">
+    <!-- MENÚ -->
+<nav class="navbar navbar-expand-lg miNavbar">
+    <div class="container">
+
+        <!-- LOGO Y NOMBRE -->
+        <a class="navbar-brand" href="index.html">
+            <img src="./Recursos/Imagenes/logo.sinfondo.png"
+                 alt="EduEspecial">
+            <span>EduEspecial</span>
+        </a>
+
+        <!-- BOTÓN PARA CELULAR -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- OPCIONES DEL MENÚ -->
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <!-- NIVEL -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown">
+                            Nivel
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="inicial.html">
+                                    Inicial
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="primario.html">
+                                    Primario
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="secundario.html">
+                                    Secundario
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#galeria">
+                            Galería
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contacto">
+                            Contacto
+                        </a>
+                    </li>
+                    <button onclick="cambiarModo()" class="boton-modo">
+                        🌙  
+                    </button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- PORTADA -->
+    <section class="hero-secundario">
+        <div class="hero-secundario-texto">
+            <span class="etiqueta-secundario">
+                APRENDER PARA LA VIDA
+            </span>
+            <h1>🎓 Nivel Secundario</h1>
+            <p>
+                Propuestas para desarrollar autonomía, comunicación,
+                habilidades para la vida cotidiana y formación para el trabajo.
+            </p>
+            <a href="#propuestas-secundario" class="boton-secundario">
+                DESCUBRIR PROPUESTAS
+            </a>
+        </div>
+
+        <div class="hero-secundario-iconos">
+            <div>💬</div>
+            <div>🛒</div>
+            <div>💼</div>
+            <div>🚌</div>
+        </div>
+    </section>
+
+
+    <section id="propuestas-secundario" class="propuestas-secundario">
+        <h2>Aprendemos para desenvolvernos cada día</h2>
+        <p class="subtitulo-secundario">
+            Recursos pensados para favorecer aprendizajes significativos y funcionales.
+        </p>
+
+
+        <div class="fila-secundario">
+            <div class="numero-secundario">01</div>
+            <div class="contenido-secundario">
+                <span class="icono-secundario">🏠</span>
+                <h3>Autonomía personal</h3>
+                <p>
+                    Actividades relacionadas con rutinas, organización,
+                    cuidado personal y toma de decisiones.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="fila-secundario fila-derecha">
+            <div class="numero-secundario">02</div>
+            <div class="contenido-secundario">
+                <span class="icono-secundario">🛒</span>
+                <h3>Vida cotidiana</h3>
+                <p>
+                    Uso del dinero, compras, horarios, transporte
+                    y situaciones de la vida diaria.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="fila-secundario">
+            <div class="numero-secundario">03</div>
+            <div class="contenido-secundario">
+                <span class="icono-secundario">💬</span>
+                <h3>Comunicación</h3>
+                <p>
+                    Recursos para expresar necesidades, opiniones,
+                    emociones e interactuar con otras personas.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="fila-secundario fila-derecha">
+            <div class="numero-secundario">04</div>
+            <div class="contenido-secundario">
+                <span class="icono-secundario">💼</span>
+                <h3>Formación laboral</h3>
+                <p>
+                    Propuestas para desarrollar responsabilidad,
+                    organización y habilidades vinculadas al trabajo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cierre-secundario">
+        <h2>🌟 Cada aprendizaje abre nuevas posibilidades</h2>
+        <p>
+            Acompañamos trayectorias educativas promoviendo
+            participación, autonomía e inclusión.
+        </p>
+    </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./Recursos/Js/main.js"></script>
+    <!-- BOTÓN VOLVER ARRIBA -->
+<button id="botonSubir" onclick="volverArriba()">
+    ↑
+</button>
+</body>
+</html>

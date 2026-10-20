@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel Inicial - EduEspecial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/Recursos/css/Estilos/style.css">
+</head>
+<body id="inicio">
+    <!-- MENÚ -->
+    <nav class="navbar navbar-expand-lg miNavbar">
+        <div class="container">
+            <!-- LOGO -->
+            <a class="navbar-brand" href="index.html">
+                <img src="/static/Recursos/Imagenes/logo.sinfondo.png" alt="EduEspecial" width="70">
+                <span>EduEspecial</span>
+            </a>
+
+            <!-- BOTÓN PARA CELULAR -->
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- OPCIONES DEL MENÚ -->
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <!-- NIVEL -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown">
+                            Nivel
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="inicial.html">
+                                    Inicial
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="primario.html">
+                                    Primario
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="secundario.html">
+                                    Secundario
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#galeria">
+                            Galería
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contacto">
+                            Contacto
+                        </a>
+                    </li>
+                    <button onclick="cambiarModo()" class="boton-modo">
+                        🌙  
+                    </button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- CONTENIDO NIVEL INICIAL -->
+    <main class="pagina-inicial">
+    <!-- PORTADA -->
+    <section class="hero-inicial">
+        <div class="hero-texto">
+            <h1> Nivel Inicial</h1>
+            <p>
+                Juegos, experiencias y recursos para acompañar
+                los primeros aprendizajes de manera lúdica.
+            </p>
+            <a href="#actividades" class="boton-inicial">
+                VER ACTIVIDADES
+            </a>
+        </div>
+        <div class="hero-imagen">
+            <img src="/static/Recursos/Imagenes/inicial.jpg" alt="Nivel Inicial">
+        </div>
+    </section>
+
+    <!-- BLOQUES -->
+    <section class="bloques-inicial">
+        <div class="bloque-color">
+            <div class="bloque-icono">🎨</div>
+            <div>
+                <h2>Explorar y descubrir</h2>
+                <p>
+                    Colores, formas, tamaños, clasificación y propuestas
+                    para aprender mediante la exploración.
+                </p>
+            </div>
+        </div>
+
+        <div class="bloque-color bloque-diferente">
+            <div class="bloque-icono">⭐</div>
+            <div>
+                <h2>Aprender jugando</h2>
+                <p>
+                    Juegos de asociación, memoria, motricidad y actividades
+                    para favorecer la atención y la participación.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ACTIVIDADES -->
+    <section id="actividades" class="actividades-destacadas">
+        <h2>Actividades destacadas</h2>
+        <div class="actividad-horizontal">
+            <div class="actividad-imagen">
+                <img src="/static/Recursos/Imagenes/juegosycolores.png" alt="Colores y formas">
+            </div>
+            <div class="actividad-texto">
+                <h3> COLORES Y FORMAS</h3>
+                <p>
+                    Recursos para reconocer colores, formas,
+                    tamaños y realizar clasificaciones sencillas.
+                </p>
+                </a>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="actividad-horizontal actividad-invertida">
+            <div class="actividad-imagen">
+                <img src="/static/Recursos/Imagenes/letras.png" alt="Primeras letras">
+            </div>
+            <div class="actividad-texto">
+                <h3>🔤 Primeras letras</h3>
+                <p>
+                    Juegos para reconocer letras, sonidos,
+                    imágenes y comenzar a formar palabras.
+                </p>
+            </div>
+        </div>
+        <div class="actividad-horizontal">
+            <div class="actividad-imagen">
+                <img src="/static/Recursos/Imagenes/motricidad.png" alt="Motricidad">
+            </div>
+            <div class="actividad-texto">
+                <h3>✋ Motricidad fina</h3>
+                <p>
+                    Actividades de encastre, ensarte, modelado
+                    y coordinación óculo-manual.
+                </p>
+            </div>
+        </div>
+    </section>
+
+</main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/Recursos/Js/main.js"></script>
+    <!-- BOTÓN VOLVER ARRIBA -->
+<button id="botonSubir" onclick="volverArriba()">
+    ↑
+</button>
+</body>
+</html>

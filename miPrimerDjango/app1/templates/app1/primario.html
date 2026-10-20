@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel Primario - EduEspecial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Recursos/Estilos/style.css">
+</head>
+<body id="inicio">
+    <!-- MENÚ -->
+    <nav class="navbar navbar-expand-lg miNavbar">
+        <div class="container">
+            <!-- LOGO -->
+            <a class="navbar-brand" href="index.html">
+                <img src="./Recursos/Imagenes/logo.sinfondo.png" alt="EduEspecial" width="70">
+                <span>EduEspecial</span>
+            </a>
+
+            <!-- BOTÓN PARA CELULAR -->
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- OPCIONES DEL MENÚ -->
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <!-- NIVEL -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown">
+                            Nivel
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="inicial.html">
+                                    Inicial
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="primario.html">
+                                    Primario
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="secundario.html">
+                                    Secundario
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#galeria">
+                            Galería
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contacto">
+                            Contacto
+                        </a>
+                    </li>
+                    <button onclick="cambiarModo()" class="boton-modo">
+                        🌙  
+                    </button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </nav><main class="pagina-primario">
+
+    <!-- PORTADA -->
+    <section class="hero-primario">
+        <div class="hero-primario-texto">
+            <h1>📘 Nivel Primario</h1>
+            <p>
+                Recursos para acompañar la lectura, escritura,
+                matemática y otros aprendizajes escolares.
+            </p>
+            <a href="#areasPrimario" class="boton-primario">
+                EXPLORAR ÁREAS
+            </a>
+        </div>
+        <div class="hero-primario-imagen">
+            <img src="./Recursos/Imagenes/nivel primario.png"
+                 alt="Nivel Primario">
+        </div>
+    </section>
+
+
+    <!-- ÁREAS -->
+    <section id="areasPrimario" class="areas-primario">
+        <h2>Áreas de aprendizaje</h2>
+        <div class="grilla-primario">
+            <div class="bloque-primario bloque-lengua">
+                <div class="icono-area">🔤</div>
+                <h3>Lengua</h3>
+                <p>
+                    Lectura, escritura, comprensión,
+                    palabras y producción de textos.
+                </p>
+                <a href="#" class="boton-area">
+                    VER RECURSOS
+                </a>
+            </div>
+
+
+            <div class="bloque-primario bloque-matematica">
+                <div class="icono-area">🔢</div>
+                <h3>Matemática</h3>
+                <p>
+                    Números, cantidades, operaciones
+                    y resolución de situaciones sencillas.
+                </p>
+                <a href="#" class="boton-area">
+                    VER RECURSOS
+                </a>
+            </div>
+
+
+            <div class="bloque-primario bloque-ciencias">
+                <div class="icono-area">🌎</div>
+                <h3>Ciencias</h3>
+                <p>
+                    Actividades para explorar el ambiente,
+                    la naturaleza y la vida cotidiana.
+                </p>
+                <a href="#" class="boton-area">
+                    VER RECURSOS
+                </a>
+            </div>
+
+
+            <div class="bloque-primario bloque-emociones">
+                <div class="icono-area">😊</div>
+                <h3>Emociones</h3>
+                <p>
+                    Recursos para reconocer, expresar
+                    y trabajar diferentes emociones.
+                </p>
+                <a href="#" class="boton-area">
+                    VER RECURSOS
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ACTIVIDAD DESTACADA -->
+    <section class="destacado-primario">
+        <div class="destacado-primario-imagen">
+            <img src="./Recursos/Imagenes/alfabetización.png"
+                 alt="Actividad de lectura">
+        </div>
+        <div class="destacado-primario-texto">
+            <span class="etiqueta-primario">
+                ACTIVIDAD DESTACADA
+            </span>
+            <h2>📖 Lectura y comprensión</h2>
+            <p>
+                Propuestas con imágenes para el 
+                inicio de la alfabetización. 
+            </p>
+        </div>
+    </section>
+</main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./Recursos/Js/main.js"></script>
+    <!-- BOTÓN VOLVER ARRIBA -->
+<button id="botonSubir" onclick="volverArriba()">
+    ↑
+</button>
+</body>
+</html>
